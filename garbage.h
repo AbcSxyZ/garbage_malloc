@@ -38,7 +38,7 @@ struct		s_garblst
 extern t_garblst	*g_garbage;
 
 void		garbage_free(void *ptr);
-void		*garbage_malloc(int size);
+void		*garbage_malloc(size_t size);
 void		free_g_garbage_lst(void) __attribute__((destructor));
 
 #endif

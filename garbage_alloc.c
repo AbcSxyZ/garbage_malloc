@@ -70,7 +70,7 @@ void		garbage_free(void *ptr)
 ** Store the new allocated pointer in the g_garbage list.
 */
 
-void		*garbage_malloc(int size)
+void		*garbage_malloc(size_t size)
 {
 	t_garblst	*garb_item;
 
