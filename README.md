@@ -5,7 +5,7 @@ Functions which allow the override of C malloc and free functions. Will store ea
 
 This let you create a `#define` for malloc and free like the exemple below.
 
-A destructor function `garbage_destructor(void)` is also added to destroy our chained list at the end of the programm execution. With this ability, you can leave a programm with `exit` and each allocated element is gonna be free properly.
+A destructor attribute is set to `free_g_garbage_lst(void)` to destroy our chained list at the end of the programm execution. With this ability, you can leave a programm with `exit` and each allocated element is gonna be free properly.
 
 ### Exemple 1
 ```
@@ -46,6 +46,11 @@ int		main(int argc, char **argv)
   str2 = malloc(sizeof(char) * 9);
   
   if (!str || !str2)
-    exit(-1);    // Will exit without any leaks using garbage_destructor
+    exit(-1);    // Will exit without any leaks a destructor
 }
 ```
+
+
+_42 norm :_  
+
+- Lowercase `#define` are not allowed, you should use `#define MALLOC   garbage_malloc` instead.
