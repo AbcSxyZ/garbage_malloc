@@ -49,3 +49,8 @@ int		main(int argc, char **argv)
     exit(-1);    // Will exit without any leaks a destructor
 }
 ```
+
+
+_42 norm :_  
+
+- Lowercase `#define` are not allowed, you should use `#define MALLOC   garbage_malloc` instead.
