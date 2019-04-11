@@ -5,7 +5,7 @@ Functions which allow the override of C malloc and free functions. Will store ea
 
 This let you create a `#define` for malloc and free like the exemple below.
 
-A destructor function `garbage_destructor(void)` is also added to destroy our chained list at the end of the programm execution. With this ability, you can leave a programm with `exit` and each allocated element is gonna be free properly.
+A destructor attribute is set to `free_g_garbage_lst(void)` to destroy our chained list at the end of the programm execution. With this ability, you can leave a programm with `exit` and each allocated element is gonna be free properly.
 
 ### Exemple 1
 ```
