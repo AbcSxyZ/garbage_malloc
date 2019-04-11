@@ -43,6 +43,6 @@ int		main(int argc, char **argv)
   str2 = MALLOC(sizeof(char) * 9);
   
   if (!str || !str2)
-    exit(-1);    // Will exit without any leaks a destructor
+    exit(-1);    // Will exit without any leaks with a destructor
 }
 ```
