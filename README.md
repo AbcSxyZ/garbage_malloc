@@ -46,6 +46,6 @@ int		main(int argc, char **argv)
   str2 = malloc(sizeof(char) * 9);
   
   if (!str || !str2)
-    exit(-1);    // Will exit without any leaks using garbage_destructor
+    exit(-1);    // Will exit without any leaks a destructor
 }
 ```
