@@ -6,7 +6,7 @@
 /*   By: simrossi <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/04/10 19:44:25 by simrossi     #+#   ##    ##    #+#       */
-/*   Updated: 2019/04/10 22:22:22 by simrossi    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/04/11 10:17:52 by simrossi    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -28,7 +28,6 @@ extern t_garblst	*g_garbage;
 
 void		garbage_free(void *ptr);
 void		*garbage_malloc(int size);
-void		garbage_destructor(void) __attribute__((destructor));
-void		free_g_garbage_lst(void);
+void		free_g_garbage_lst(void) __attribute__((destructor));
 
 #endif

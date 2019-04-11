@@ -6,7 +6,7 @@
 /*   By: simrossi <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/04/10 19:46:00 by simrossi     #+#   ##    ##    #+#       */
-/*   Updated: 2019/04/10 22:23:01 by simrossi    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/04/11 10:17:26 by simrossi    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -14,18 +14,6 @@
 #include "garbage.h"
 
 t_garblst		*g_garbage = NULL;
-
-/*
-** garbage_destructor:
-**
-** Destructor function to free the entire chained list of allocated memory
-** whenver the programm is over.
-*/
-
-void		garbage_destructor(void)
-{
-	free_g_garbage_lst();
-}
 
 /*
 ** free_g_garbage_lst:
