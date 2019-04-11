@@ -8,7 +8,7 @@ You can use macro `MALLOC` and `FREE` defined in the header to malloc and free l
 A destructor attribute is set to `free_g_garbage_lst(void)` to destroy our chained list at the end of the programm execution. With this ability, you can leave a programm with `exit` and each allocated element is gonna be free properly.
 
 ### Exemple 1
-```
+```c
 #include "garbage.h"
 #include <string.h>
 #include <stdio.h>
@@ -26,7 +26,7 @@ int		main(int argc, char **argv)
 ```
 
 ### Exemple 2
-```
+```c
 #include "garbage.h"
 #include <string.h>
 #include <stdio.h>
