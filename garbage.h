@@ -6,7 +6,7 @@
 /*   By: simrossi <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/04/10 19:44:25 by simrossi     #+#   ##    ##    #+#       */
-/*   Updated: 2019/04/11 10:17:52 by simrossi    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/04/11 10:44:01 by simrossi    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -15,6 +15,17 @@
 # define GARBAGE_H
 
 # include <stdlib.h>
+
+/*
+** Macro to use for allocation and free.
+*/
+
+# define MALLOC		garbage_malloc
+# define FREE		garbage_free
+
+/*
+** Structure of the chained list to store each allocated element.
+*/
 
 typedef struct s_garblst	t_garblst;
 
