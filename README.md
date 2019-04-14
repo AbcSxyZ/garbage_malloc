@@ -31,9 +31,6 @@ int		main(int argc, char **argv)
 #include <string.h>
 #include <stdio.h>
 
-#define malloc	garbage_malloc
-#define free	garbage_free
-
 int		main(int argc, char **argv)
 {
   char	*str;
